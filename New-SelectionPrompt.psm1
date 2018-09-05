@@ -36,3 +36,5 @@
 
     return $options[$selection]
 }
+
+Export-ModuleMember "New-SelectionPrompt"
