@@ -4,7 +4,7 @@
 
 foreach($dependency in $dependencies)
 {
-    $content = Invoke-WebRequest $dependency
+    $content = (Invoke-WebRequest $dependency).content
     $path = "$env:TEMP\$(Get-Random -Maximum 999 -Minimum 100)-importModule.psm1"
     Out-File -FilePath $path -InputObject $content
     
