@@ -1,4 +1,4 @@
-﻿function New-SelectionPrompt
+﻿function New-SelectionPrompt ()
 {
     Param(
         [ValidateScript({$_ -ne "" -and $_ -ne $null})] 
